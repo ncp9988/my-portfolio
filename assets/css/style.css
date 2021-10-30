@@ -1,6 +1,6 @@
 :root {
     --main-color:#182C61;
-    --second-color:#60a3bc;
+    --second-color:#5a8eb8;
     --third-color: #F4DEE9;
 }
 * {
@@ -174,6 +174,10 @@ padding-top: 3%;
     #about-me {
         flex: 0 70%;
     }
+    #contact-me ul, #contact-m3 h4 {
+        text-align: center;
+        width: 100%;
+    }
 
 
 
@@ -203,13 +207,32 @@ padding-top: 3%;
         flex: 2 100%;
         justify-content: center;
     }
+    .imgcontainer {
+        display: block;
+    }
 
 
 
 }
 
-/*For mobile phone and smaller*/
+/* Media Query For mobile phone and smaller*/
 @media screen and (max-width: 575px) {
+   
+    #about-me , #works {
+        width: 95%;
+    }
+    #aboutmeintro p {
+        width: 100%;
+    }
+    .works {
+        flex: 0 100%;
+        display: block;
+    }
+    #contact-me ul {
+        display: block;
+        justify-content: space-between;
+    }
+
 
 }
 
