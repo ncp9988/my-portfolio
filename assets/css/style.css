@@ -16,6 +16,8 @@ header {
     background-size:cover;
     min-width: 100%;
     padding-bottom: 2%;
+    display: flex;
+    
 
 }
 header h1 {
@@ -89,10 +91,10 @@ h4{
      padding: 5%;
 }
 #aboutmeintro{
-    line-height: 2.5;
+    line-height: 2.0;
     color: var(--main-color);
-    font-size: 20px;
-    letter-spacing: 2px;
+    font-size: 17px;
+    letter-spacing: 1.5px;
     padding: 10px 10px;
 }
  .photo {
@@ -176,8 +178,34 @@ padding-top: 3%;
 
 
 }
-/*For tablet and smaller*/
+/* Media Query For Tablets and Smaller*/
 @media screen and (max-width: 768px) {
+    section {
+        padding: 25px 15px;
+    }
+    #about-me  {
+        flex: 1 100%;
+        text-align: center;
+        display: block;
+    }
+    #aboutmeintro {
+        line-height: 1.5;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+    .imgcontainer {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-bottom: 15%;
+        margin-top: 15px;
+    }
+    .container1 {
+        flex: 2 100%;
+        justify-content: center;
+    }
+
+
+
 }
 
 /*For mobile phone and smaller*/
