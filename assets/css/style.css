@@ -65,12 +65,6 @@ body {
     padding: 30px 50px;
 }
 
-
-.row {
-    width: 900px;
-    margin: 0 auto 30px auto;
-    color: dimgrey; 
-}
 h2 {
     font-size: 40px;
     margin-top: 10px;
@@ -86,10 +80,6 @@ h4{
 
 }
 
- .about-me img {
-     width: 40%;
-     padding: 5%;
-}
 #aboutmeintro{
     line-height: 2.0;
     color: var(--main-color);
@@ -124,11 +114,12 @@ margin-bottom: 3%;
 padding-bottom: 3%;
 padding-top: 3%;
 }
-.container1{ 
+.container1 { 
     min-width: 40%;
     max-width: 40%;
     position:relative;
 }
+
 .pic{
     position: absolute;
     bottom: 10px;
@@ -146,6 +137,7 @@ padding-top: 3%;
     max-width:100%;
     flex-wrap: wrap;
 }
+
 /* Media Query For Smaller Desktop Screen And Smaller*/
 @media screen and (max-width: 980px) {
     header{
@@ -168,12 +160,10 @@ padding-top: 3%;
     .main-contain {
         text-align: center;
     }
-    .container1 {
+    .container1, #about-me , .imgcontainer {
         flex: 0 70%;
     }
-    #about-me {
-        flex: 0 70%;
-    }
+
     #contact-me ul, #contact-m3 h4 {
         text-align: center;
         width: 100%;
