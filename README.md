@@ -7,8 +7,11 @@
  3. Add styles
  4. Add media queries
 
-### Screenshot 
-[Screenshot] ()
-
 ### URL 
-https://github.com/ncp9988/my-portfolio.git
+https://ncp9988.github.io/my-portfolio/
+
+### GitHub 
+https://github.com/ncp9988/my-portfolio
+
+### Screenshot 
+[Screenshot](https://github.com/ncp9988/my-portfolio/blob/main/assets/images/screenshot.png)
