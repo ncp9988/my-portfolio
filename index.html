@@ -2,139 +2,197 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>NCP</title>
+  <meta charset="UTF-8" />
+  <title>Shelby-Porfolio</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-    <header>
-        <h1>
-            <a href="/">NGOC CHAU PHAM</a>
-        </h1>
-        <nav>
-            <ul>
-                <li>
-                    <a href="#about-me">About Me</a>
-                </li>
-                <li>
-                    <a href="#works">Works</a>
-                </li>
-                <li>
-                    <a href="#contact-me">Contact Me</a>
-                </li>
-            </ul>
-        </nav>
-        <br>
-    </header>
-    <section class="main-content">
-        <section id="about-me">
-            <h2>About Me</h2>
-            <div class="imgcontainer">
-            <img src="assets/images/itsme.jpg" alt="It's-me" />
-            </div>
-            <div>
-            <p id="aboutmeintro">
-                Hi, It's Shelby. I have been in the US for 4.5 years. I went to Community Dallas College for 2 years and
-                just had my Associate of Science. Along with that I am also a Esthetician, so far it has been more than
-                3 years. I specialize in Eyelashes and I love making people prittier. 
-        
-            </p>
-            </div>
-        </section>
-        <section id="works">
-            <h2>Works</h2>
-            <section id="portfolio">
-                <div class="container1">
+  <!-- navigation -->
+  <header>
+    <h1>
+      <a href="/">
+        SHELBY VO
+      </a>
+    </h1>
+    <nav>
+      <!-- Unordered list element -->
+      <ul>
+        <!-- List item element-->
+        <li>
+          <!-- Anchor element -->
+          <a href="#about-me">About-me</a>
+        </li>
+        <li>
+          <a href="#my-project">My-projects</a>
+        </li>
+        <li>
+          <a href="#my-info">My-info</a>
+        </li>
+        <li>
+            <a href="#feeback">Leave feedback</a>
+          </li>
+      </ul>
+    </nav>
+  </header>
 
-                    <div class="imgcontainer">
-                        <a href="https://github.com/ncp9988/myfirstfanpage.git">
+  <!-- hero/jumbotron -->
+  <!-- <section class="hero">
+    <div class="hero-form">
+      <h3>Get Started Today</h3>
+      <p>Fill out this form and one of our trainers will schedule a consult</p>
+      <form>
+        <label for="name">Enter full name:</label>
+        <input type="text" placeholder="Your Name" name="name" id="name" class="form-input" />
+        <label for="email">Enter email address:</label>
+        <input type="text" placeholder="Email Address" name="email" id="email" class="form-input" />
+        <label for="phone">Enter a telephone number:</label>
+        <input type="text" placeholder="Phone Number" name="phone" id="phone" class="form-input" />
+        <p>
+          Have you worked out with a trainer before?
+          <input type="radio" name="trainer-confirm" id="trainer-yes" />
+          <label for="trainer-yes">Yes</label>
+          <input type="radio" name="trainer-confirm" id="trainer-no" />
+          <label for="trainer-no">No</label>
+        </p>
+        <p>
+          <label for="checkbox">
+            I acknowledge that I am at least 18 years of age.
+          </label>
+          <input type="checkbox" name="checkpoint1" id="checkbox" />
+        </p>
+        <button type="submit">
+          Get running!
+        </button>
+      </form>
+    </div>
+  </section> -->
 
-                        
-                            <img class="photo" src="assets/images/fanpage.jpg" alt="Fan Page" /> </a>
-                
-                    </div>
-                    <div class="pic">
-                        
+  <!-- "what we do" section -->
+  <section id="about-me" class="intro">
+    <h2 class="section-title primary-border">About-me</h2>
+    <p>
+      Junior Computer Science at UTD
+      <br/>
+      Love tech       <br/>
+      Let's see my works       <br/>
+      
+    </p>
+  </section>
 
-                        <h3>First fanpage</h3>
-                    </div>
-                </div>
-                <div class="container1">
-                    <div class="imgcontainer">
-                        <a href="https://github.com/ncp9988/run-buddy.git">
-                         
+  <!-- "what you do" section -->
+  <!-- <section id="what-you-do" class="steps">
+    <h2 class="section-title secondary-border">What You Do</h2>
 
-                        <img class="photo" src="assets/images/hero-bg.jpg" alt="Run-Buddy" /></a>
-                    </div>
-                    <div class="pic">
-                        <h3>Run-Buddy</h3>
-                    </div>
-                </div>
+    <div>
+      <img src="./assets/images/step-1.svg" alt="" />
+      <h3>Step 1: <span>Fill Out the Form Above.</span></h3>
+      <p>You're already here, so why not?</p>
+    </div>
 
-                <div class="container1">
+    <div>
+      <img src="./assets/images/step-2.svg" alt="" />
+      <h3>Step 2: <span>Consult with One of Our Trainers.</span></h3>
+      <p>Are you here to build muscle, lose weight, or just feel good?</p>
+    </div>
 
-                    <div class="imgcontainer">
+    <div>
+      <img src="./assets/images/step-3.svg" alt="" />
+      <h3>Step 3: <span>Get Running.</span></h3>
+      <p>Hit the ground running (literally) once your trainer lays out your plan.</p>
+    </div>
 
-                        <a href="https://github.com/ncp9988/coderefactor.git">
-                            <img class="photo" src="assets/images/digital-marketing-meeting.jpg" alt="Code Refactor" />
-                        </a>
+    <div>
+      <img src="./assets/images/step-4.svg" alt="" />
+      <h3>Step 4: <span>See Results.</span></h3>
+      <p>Bi-weekly checkins with your trainer will keep you focused</p>
+    </div>
+  </section> -->
 
-                    </div>
-                    <div class="pic">
-                        <h3>Code Refactor</h3>
-                    </div>
-                </div>    
-                <div class="container1">
-
-                    <div class="imgcontainer">
-
-                        <a href="https://github.com/ncp9988/Eat-Eat-Eat.git">
-                            <img class="photo" src="assets/images/Eat-Eat-Eat.png" alt="Eat-Eat-Eat" />
-                        </a>
-
-                    </div>
-                    <div class="pic">
-                        <h3>Eat-Eat-Eat</h3>
-                    </div>
-                </div>
-                <div class="container1">
-
-                    <div class="imgcontainer">
-
-                        <a href="https://github.com/Arcanaut/Group-Project-2.git">
-                            <img class="photo" src="assets/images/vFriend.png" alt="vFriend" />
-                        </a>
-
-                    </div>
-                    <div class="pic">
-                        <h3>vFriend</h3>
-                    </div>
-                </div>
-
-
-                  
-            </section>
-        </section>
-        <section id="contact-me">
-            <h4>Contact Me</h4>
+  <!-- "meet the trainers" section -->
+  <section id="my-project" class="trainers">
+    <h2 class="section-title secondary-border">My Projects</h2>
+    <article class="trainer">
+      <img src="./assets/images/eat.png" alt="Picture of Nosh Navigator Application" />
+      <div class="trainer-bio text-left">
+        <h3><a href="https://ncp9988.github.io/Eat-Eat-Eat/" class="link">Nosh Navigator</a></h3>
+        <!-- <h4>Speed / Strength</h4> -->
+        <p>
+            ·	Designed a location-based restaurant suggestion app with user ratings and distance input. <br/>
+            ·	Developed personalized features to improve user convenience, refining skills in location-based app development.
             
-            <ul>
-                <li>
-                    <a href="mailto:ncp9988@gmail.com">ncp9988@gmail.com</a>
-                </li>
-                <li>
-                    <a href="tel:+14692079081">(469)-207-9081</a>
-                </li>
-                <li>
-                    <a href="https://github.com/ncp9988">GitHub</a>
-                </li>
-            </ul>
-        </section>
-    </section>
+        </p>
+      </div>
+    </article>
 
+    <!-- second trainer bio -->
+    <article class="trainer">
+      <div class="trainer-bio text-left">
+        <h3><a hreaf="https://cometmail-my.sharepoint.com/personal/txp220018_utdallas_edu/_layouts/15/stream.aspx?id=%2Fpersonal%2Ftxp220018%5Futdallas%5Fedu%2FDocuments%2FScreen%20Recording%202023%2D12%2D11%20at%201%2E19%2E55%20PM%2Emov&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview&sw=auth" class="link">Referral Systems</a></h3>
+        <!-- <h4>Endurance</h4> -->
+        <p>
+            ·	Implemented SQL and NoSQL databases (MySQL and MongoDB) for efficient referrals. <br/>
+            ·	Developed a responsive user interface using React.  <br/>
+            ·	Designed an intuitive user experience with HTML, CSS, and JavaScript.  <br/>
+            ·	Utilized React to create powerful search and reporting features. <br/>
+            ·	Managed project tasks and actively engaging with clients to ensure project alignment and client satisfaction.  <br/>
+            
+        </p>
+      </div>
+      <img src="./assets/images/Referral.png" alt="Picture of Referral System's Hero" />
+    </article>
+
+    <!-- third trainer bio -->
+    <article class="trainer">
+      <img src="./assets/images/PasswordGenerator.png"
+        alt="Picture of UI Password Generator" />
+      <div class="trainer-bio text-left">
+        <h3>Password Generator</h3>
+        <!-- <h4>Strength</h4> -->
+        <p>
+            ·  Designed and developed a password generator application from scratch. <br/>
+            ·  Implemented user input validations for password length (8 to 128 characters) and character selections. <br/> 
+            ·  Created random selection algorithms based on user-defined criteria for character types. <br/>
+        </p>
+      </div>
+    </article>
+  </section>
+
+  <!-- "reach out" section -->
+  <section id="my-info" class="contact">
+    <h2 class="section-title primary-border">Contact Info</h2>
+    <div class="contact-info">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d106318.45571254421!2d-96.78762064688841!3d33.61952713986692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x864c79cc503f06b7%3A0x8f9e9208cae18551!2sSherman%2C%20TX!5e0!3m2!1sen!2sus!4v1702847587400!5m2!1sen!2sus" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        
+      <div>
+        <h3 id="feedback">To Shelby</h3>
+        <p>
+          Leave a message to me
+          <br />
+          <input type="text" placeholder="Your message" name="message" id="name" class="form-input" />
+          <button type="submit">
+            Submit
+          </button>
+        </p>
+        <address>
+          Sherman, TX 75092 <br />
+          Phone: <a href="tel:+14692079002">+1 (469) 207-9002</a> <br/>
+          Email: <a href="mailto:byncp99@gmail.com">byncp99@gmail.com</a>
+        </address>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer -->
+  <!-- <footer>
+    <h2>❤️ Made with love by Run Buddy.</h2>
+    <div>
+      <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
+      &copy; 2019 Run Buddy, Inc.
+    </div>
+  </footer> -->
 </body>
 
 </html>
