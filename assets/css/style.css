@@ -12,8 +12,10 @@
   
   /* apply styles to <header> */
   header {
-    padding: 20px 35px;
+    padding: 30px 35px;
     background-color: white;
+    position: fixed;
+    width: 100%;
   }
   
   header h1 {
@@ -44,16 +46,18 @@
   }
   
   footer {
-    background: #fce138;
+    background: white;
     width: 100%;
     padding: 40px 35px;
   }
   
   footer h2 {
-    display: inline;
+    /* display: inline; */
+    text-align: right;
     color: #024e76;
     font-size: 30px;
     margin: 0;
+    font-size: 18px;
   }
   
   footer div {
@@ -131,7 +135,18 @@
   
   .intro {
     text-align: center;
+    overflow: auto;
+    padding: 200px;
+
   }
+
+  .intro h2{
+    font-size: 37px;
+    color: #024e76;
+
+  }
+
+ 
   
   .intro p {
     line-height: 1.7;
@@ -139,6 +154,7 @@
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
+    position: inline;
   }
   
   .steps {
@@ -171,60 +187,62 @@
   }
   
   .section-title {
-    font-size: 55px;
+    font-size: 37px;
     margin-bottom: 35px;
     padding: 0 100px 20px 100px;
     display: inline-block;
-    border-bottom: 3px solid;
   }
   
   .primary-border {
     border-color: #024e76;
+    border-bottom: 3px solid;
     color: #024e76;
   }
   
   .secondary-border {
     border-color: white;
+    border-bottom: 3px solid;
     color: white;
   }
 
   
-  .trainers {
+  .projects {
     text-align: center;
     background-color: #024e76;
   }
   
-  .trainer {
+  .project {
     width: 900px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 35px auto;
     background: #024e76;
     color:white;
     overflow: auto;
   }
   
-  .trainer img {
+  .project img {
     width: 35%;
     float: left;
+    border-radius: 10px;
   }
   
-  .trainer-bio {
+  .project-bio {
     padding: 35px;
     float: left;
     width: 65%;
   }
   
-  .trainer-bio h3 {
+  .project-bio h3 {
     font-size: 32px;
     margin-bottom: 8px;
   }
   
-  .trainer-bio h4 {
+  .project-bio h4 {
     font-weight: lighter;
     font-size: 26px;
     margin-bottom: 25px;
   }
   
-  .trainer-bio p {
+  .project-bio p {
     font-size: 17px;
     line-height: 1.3;
   }
