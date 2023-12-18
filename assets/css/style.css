@@ -136,26 +136,30 @@
   .intro {
     text-align: center;
     overflow: auto;
-    padding: 200px;
+ 
 
   }
 
-  .intro h2{
-    font-size: 37px;
-    color: #024e76;
+  .intro video {
+    object-fit: cover;
+    width: 100%;
+    height: 900px;
+    padding: 0 45px 0 45px;
+    padding: 0 60px 20px 60px;
 
+   
   }
 
  
   
-  .intro p {
+  /* .intro p {
     line-height: 1.7;
     color: #39a6b2;
     width: 80%;
     font-size: 20px;
     margin: 0 auto;
     position: inline;
-  }
+  } */
   
   .steps {
     text-align: center;
