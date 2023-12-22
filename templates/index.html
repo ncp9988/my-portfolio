@@ -4,13 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <title>Shelby-Porfolio</title>
-    <link rel="stylesheet" href="../assets/css/style.css" />
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
-    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q"
-    crossorigin="anonymous"
-  />
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
 </head>
 
 <body>
@@ -33,7 +29,7 @@
                     <a href="#my-info">My-info</a>
                 </li>
                 <li>
-                    <a href="./assets/Shelby❤️ .pdf">My Resume</a>
+                    <a href="../static/Shelby❤️ .pdf">My Resume</a>
                 </li>
             </ul>
         </nav>
@@ -42,8 +38,9 @@
 
     <!-- "what we do" section -->
     <section id="about-me" class="intro">
-        <video src="./assets/Purple Gradient Web Design Workshop Video.mp4" autoPlay loop muted alt="There is an animation here">
-            
+        <video src="../static/Purple Gradient Web Design Workshop Video.mp4" autoPlay loop muted
+            alt="There is an animation here">
+
     </section>
 
 
@@ -52,7 +49,7 @@
         <h2 class="section-title secondary-border">My Projects</h2>
 
         <article class="project">
-            <img src="./assets/images/eat.png" alt="Picture of Nosh Navigator Application" />
+            <img src="../static/images/eat.png" alt="Picture of Nosh Navigator Application" />
             <div class="project-bio text-left">
                 <h3><a href="https://ncp9988.github.io/Eat-Eat-Eat/" class="link">Nosh Navigator</a></h3>
                 <!-- <h4>Speed / Strength</h4> -->
@@ -81,11 +78,11 @@
 
                 </p>
             </div>
-            <img src="./assets/images/Referral.png" alt="Picture of Referral System's Hero" />
+            <img src="../static/images/Referral.png" alt="Picture of Referral System's Hero" />
         </article>
 
         <article class="project">
-            <img src="./assets/images/PasswordGenerator.png" alt="Picture of UI Password Generator" />
+            <img src="../static/images/PasswordGenerator.png" alt="Picture of UI Password Generator" />
             <div class="project-bio text-left">
                 <h3><a href="https://ncp9988.github.io/password-generator/" class="link">Password Generator</a></h3>
                 <p>
@@ -110,14 +107,21 @@
 
             <div>
                 <h3 id="feedback">To Shelby</h3>
-                <p>
-                    Leave a message 
-                    <br />
-                    <input type="text" placeholder="Your message" name="message" id="name" class="form-input" />
-                    <button type="submit">
-                        Submit
-                    </button>
-                </p>
+                <form action="/submit" method="post">
+                    <p>
+                        Leave a message
+                        <br />
+                        <input type="text" placeholder="Your message" name="message" id="name" class="form-input" />
+                        <button type="submit">
+                            Submit
+                        </button>
+                    </p>
+                </form>
+                {% if submitted %}
+                <div class ="success-message">
+                    {{ message }}
+                </div>
+                {% endif %}
                 <address>
                     Sherman, TX 75092 <br />
                     Phone: <a href="tel:+14692079002">+1 (469) 207-9002</a> <br />
@@ -131,7 +135,7 @@
     <footer>
         <h2> &copy; Made by Shelby ❤️ </i>
             <i class="fas fa-heart-circle-bolt"></i>
-                </h2>
+        </h2>
 
     </footer>
 </body>

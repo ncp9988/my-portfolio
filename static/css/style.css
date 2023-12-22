@@ -157,34 +157,9 @@
     position: inline;
   } */
   
-  .steps {
-    text-align: center;
-    background: #fce138;
-  }
   
-  .steps div {
-    margin-bottom: 80px;
-  }
   
-  .steps img {
-    width: 15%;
-    margin: 10px 0;
-  }
   
-  .steps h3 {
-    color: #024e76;
-    font-size: 46px;
-    margin-top: 10px;
-  }
-  
-  .steps p {
-    color: #39a6b2;
-    font-size: 23px;
-  }
-  
-  .steps span {
-    font-size: 38px;
-  }
   
   .section-title {
     font-size: 37px;
@@ -299,6 +274,22 @@
   /* REACH OUT STYLES END */
   .link {
     text-decoration: none;
-    /* Other styles you want to apply */
     color: white; /* Example color */
+  }
+
+  button[type="submit"]:hover {
+    background-color: #2980b9; /* Change color on hover */
+    cursor: pointer;
+  }
+
+  .success-message {
+    text-align: center;
+    padding-top: 350px;
+    font-size: 25px;
+    color: rgb(16, 138, 182);
+  }
+
+  .success-message h6 {
+    text-align: right;
+    padding-right: 350px;
   }
