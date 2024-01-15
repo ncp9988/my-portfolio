@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <title>Shelby-Porfolio</title>
-    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}" />
+    <link rel="stylesheet" type="text/css" href="./static/css/style.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
         integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
 </head>
@@ -38,7 +38,7 @@
 
     <!-- "what we do" section -->
     <section id="about-me" class="intro">
-        <video src="../static/Purple Gradient Web Design Workshop Video.mp4" autoPlay loop muted
+        <video src="./static/Purple Gradient Web Design Workshop Video.mp4" autoPlay loop muted
             alt="There is an animation here">
 
     </section>
@@ -49,7 +49,7 @@
         <h2 class="section-title secondary-border">My Projects</h2>
 
         <article class="project">
-            <img src="../static/images/eat.png" alt="Picture of Nosh Navigator Application" />
+            <img src="./static/images/eat.png" alt="Picture of Nosh Navigator Application" />
             <div class="project-bio text-left">
                 <h3><a href="https://ncp9988.github.io/Eat-Eat-Eat/" class="link">Nosh Navigator</a></h3>
                 <!-- <h4>Speed / Strength</h4> -->
@@ -78,11 +78,11 @@
 
                 </p>
             </div>
-            <img src="../static/images/Referral.png" alt="Picture of Referral System's Hero" />
+            <img src="./static/images/Referral.png" alt="Picture of Referral System's Hero" />
         </article>
 
         <article class="project">
-            <img src="../static/images/PasswordGenerator.png" alt="Picture of UI Password Generator" />
+            <img src="./static/images/PasswordGenerator.png" alt="Picture of UI Password Generator" />
             <div class="project-bio text-left">
                 <h3><a href="https://ncp9988.github.io/password-generator/" class="link">Password Generator</a></h3>
                 <p>
@@ -108,7 +108,7 @@
             <div>
                 <h3 id="feedback">To Shelby</h3>
                 <form action="/submit" method="post">
-                    <p>
+                    <!-- <p>
                         Leave a message
                         <br />
                         <input type="text" placeholder="Your message" name="message" id="name" class="form-input" />
@@ -121,7 +121,7 @@
                 <div class ="success-message">
                     {{ message }}
                 </div>
-                {% endif %}
+                {% endif %} -->
                 <address>
                     Sherman, TX 75092 <br />
                     Phone: <a href="tel:+14692079002">+1 (469) 207-9002</a> <br />
